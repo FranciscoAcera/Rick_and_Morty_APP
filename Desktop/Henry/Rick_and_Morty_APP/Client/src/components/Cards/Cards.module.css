@@ -1,0 +1,42 @@
+.containerFilters,
+.containerCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.containerFilters {
+  padding: 20px 0px 0px;
+  justify-content: space-around;
+  background-color: #80808080;
+}
+
+.containerCards {
+  justify-content: center;
+  margin: 20px 20px 20px 0px;
+  padding-bottom: 120px;
+}
+
+.containerGlobal {
+  padding-top: 80px;
+}
+
+.containerFilters select {
+  font-size: large;
+  color: rgb(206, 206, 206);
+  background-color: #ffffff00;
+  border-style: hidden;
+}
+
+.containerFilters option {
+  background-color: #303030;
+}
+
+.containerFilters select:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.containerFilters option:hover {
+  background-color: #707070;
+}
