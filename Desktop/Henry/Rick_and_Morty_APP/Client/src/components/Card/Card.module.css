@@ -13,10 +13,11 @@
 }
 .name{
     color: black;
+    background-color: lightgrey;
     position: absolute;
-    top: 75%;
-    left: 22%;
-    font-size: 1.9rem;
+    top: 80%;
+    left: 25%;
+    font-size: 1.3rem;
     
 }
 

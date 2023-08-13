@@ -22,7 +22,7 @@ const [character, setCharacter] = useState({});
 return ( 
 <div className={style.container} >
       <div className={style.detailImg}>
-            <img src={character.image} alt={character.name} />
+            <img src={character.image} className={style.img} alt={character.name} />
          </div>
          {character.name &&(
          <div className={style.detailCharacter}>

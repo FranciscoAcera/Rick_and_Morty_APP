@@ -4,8 +4,9 @@ import styles from "./Nav.module.css";
 
 const Nav = ({ onSearch, logout }) => (
   <div className={styles.container}>
-    <button className={styles.logoutButton} onClick={logout}>
-      <i className="fa-solid fa-right-from-bracket"></i> LogOut
+    <button onClick={logout}>
+    <i class="gg-log-out"></i>
+      <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-out.css' rel='stylesheet'/>
     </button>
     <div className={styles.container2}>
       <Link to="/home">
@@ -19,9 +20,6 @@ const Nav = ({ onSearch, logout }) => (
       </Link>
     </div>
     <SearchBar onSearch={onSearch} />;
-    <button className={styles.language} onClick={() => alert("This feature is temporarily disabled!")}>
-      <i class="fa-solid fa-globe"></i>
-    </button>
   </div>
 );
 

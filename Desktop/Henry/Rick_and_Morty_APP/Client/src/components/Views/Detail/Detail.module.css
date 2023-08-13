@@ -1,0 +1,19 @@
+.container{ 
+    position: absolute;
+    border-color: black;
+    border-radius: 10%;
+    left: 25%;
+    top: 25%;
+}
+.img{
+    position: relative;
+    border-radius: 80%;
+    margin: 0 auto;
+}
+.detailCharacter{
+    background-color: rgba gray;
+    color: black;
+    margin-left: 20rem;
+    margin-top: -50%;
+
+}

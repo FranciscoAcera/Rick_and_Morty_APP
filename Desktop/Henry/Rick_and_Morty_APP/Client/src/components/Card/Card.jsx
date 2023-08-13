@@ -2,9 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { addFav, removeFav } from "../../redux/actions";
-
 import style from "./Card.module.css";
-
 
 export function Card({
   onClose,
@@ -39,6 +37,7 @@ export function Card({
       setIsFav(true);
       addFav(character);
     }
+    console.log(handleFavorite);
   };
 
   useEffect(() => {
@@ -49,21 +48,17 @@ export function Card({
     });
   }, [allCharacters]);
   return (
-    <div className={style.contenedor}>
-      <div className={style.imageContainer}>
-        <button
-          className={style.button}
-          onClick={() => onClose(id)}
-        >
-          <i className="fas fa-times"></i> X
+    <div>
+      <div className={style.contenedor}>
+        <button className={style.button} onClick={() => onClose(id)}>
+           X
         </button>
         {isFav ? (
           <button className={style.favButton1} onClick={handleFavorite}>
-            <i className="fa-solid fa-heart" /> ❤️
+           ❤️
           </button>
         ) : (
           <button className={style.favButton2} onClick={handleFavorite}>
-            <i className="fa-regular fa-heart" />
             🤍
           </button>
         )}
@@ -80,8 +75,7 @@ export function Card({
       </div>
     </div>
   );
-};
-
+}
 
 export const mapDispatchToProps = (dispatch) => {
   return {
